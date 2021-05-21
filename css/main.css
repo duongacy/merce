@@ -1,0 +1,66 @@
+.container {
+  max-width: calc(100% - 4px);
+}
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  font-size: .9rem;
+  font-weight: 400;
+  background-color: #000;
+}
+
+header .logo-wrap {
+  display: flex;
+}
+
+header .header__navbar-nav--sm {
+  font-size: .8rem;
+}
+
+header .header__nav .navbar-brand img {
+  height: 3.5rem;
+}
+
+header .header__nav .navbar-toggler i {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+header .header__nav .navbar-toggler[aria-expanded='true'] .open-text {
+  display: none;
+}
+
+header .header__nav .navbar-toggler[aria-expanded='true'] .close-text {
+  display: block;
+}
+
+header .header__nav .navbar-toggler[aria-expanded='false'] .open-text {
+  display: block;
+}
+
+header .header__nav .navbar-toggler[aria-expanded='false'] .close-text {
+  display: none;
+}
+
+header .nav__bottom {
+  margin-top: -4.1rem;
+}
+
+header .header__navbar-nav {
+  gap: .4rem;
+}
+
+header .header__navbar-nav a {
+  color: #fff;
+}
+
+header .header__navbar-nav .nav-link:hover, header .header__navbar-nav .nav-link:focus, header .header__navbar-nav .nav-link.active {
+  color: #00ADF0;
+}
+
+.reveal .reveal__item {
+  outline: 2px solid #1F1F1F;
+}
