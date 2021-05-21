@@ -1,3 +1,62 @@
-header{
+header {
     // code here
+    font-size: .9rem;
+    font-weight: 400;
+    background-color: $black;
+    .logo-wrap{
+        display: flex;
+        // justify-content: center;
+        // align-items: center;
+    }
+    .header__navbar-nav--sm{
+        font-size: .8rem;
+    }
+    .header__nav {
+        
+        .navbar-brand {
+            img {
+                height: 3.5rem;
+            }
+        }
+
+        .navbar-toggler {
+            i {
+                color: $white;
+                font-size: 1.5rem;
+            }
+            &[aria-expanded='true'] {
+                .open-text {
+                    display: none;
+                }
+                .close-text {
+                    display: block;
+                }
+            }
+            &[aria-expanded='false'] {
+                .open-text {
+                    display: block;
+                }
+                .close-text {
+                    display: none;
+                }
+            }
+        }
+    }
+    .nav__bottom{
+        margin-top: -4.1rem;
+    }
+    .header__navbar-nav {
+        gap: .4rem;
+        a {
+            color: $white;
+        }
+        .nav-link {
+            &:hover,
+            &:focus,
+            &.active {
+                color: $primary;
+            }
+        }
+    }
+    
 }
