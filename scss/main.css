@@ -6,6 +6,97 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+.example {
+  animation-name: bounceIn;
+  animation-duration: 2s;
+}
+
+.animateDropdown {
+  position: absolute;
+  animation-name: dropdown;
+  animation-duration: 3s;
+}
+
+@keyframes dropdown {
+  from {
+    top: -100vh;
+  }
+  to {
+    top: bottom;
+  }
+}
+
+.button {
+  cursor: pointer;
+  height: 2.5rem;
+  padding: 0 1rem;
+  border-radius: 0;
+  border: none;
+  color: #fff;
+}
+
+.button-secondary {
+  background-color: #333;
+}
+
+.button-secondary:hover {
+  background-color: #1F1F1F;
+}
+
+.button-primary {
+  background-color: #00ADF0;
+}
+
+.button-primary:hover {
+  background-color: rgba(0, 173, 240, 0.8);
+}
+
+.button-show-more {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.button-show-more:hover {
+  color: #fff;
+}
+
+.form-control-custom {
+  display: flex;
+  width: 100%;
+}
+
+.form-control-custom input, .form-control-custom button {
+  height: 2.5rem;
+  border: none;
+  outline: none;
+  padding: 0 1rem;
+}
+
+.form-control-custom input {
+  flex: auto;
+}
+
+.form-control-custom button {
+  transition: all .5s;
+}
+
+.form-control-custom button:hover {
+  opacity: .7;
+}
+
+.brandhub .carousel-item {
+  position: relative;
+  filter: grayscale(30%);
+}
+
+.brandhub .brandhub__overlay {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  bottom: 10%;
+  right: 10%;
+  font-family: serif;
+}
+
 header {
   font-size: .9rem;
   font-weight: 400;

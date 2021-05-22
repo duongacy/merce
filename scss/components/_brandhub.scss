@@ -1,3 +1,19 @@
-.brandhub{
+.brandhub {
     // code here
+    .brandhub__carousel {
+        
+    }
+    .carousel-item{
+        position: relative;
+        filter: grayscale(30%);
+    }
+    .brandhub__overlay {
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        bottom: 10%;
+        right: 10%;
+        font-family: serif;
+       
+    }
 }

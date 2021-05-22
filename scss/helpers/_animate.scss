@@ -1,0 +1,18 @@
+.example {
+    animation-name: bounceIn;
+    animation-duration: 2s;
+}
+
+.animateDropdown {
+    position: absolute;
+    animation-name: dropdown;
+    animation-duration: 3s;
+}
+@keyframes dropdown {
+    from {
+        top: -100vh;
+    }
+    to {
+        top: bottom;
+    }
+}
