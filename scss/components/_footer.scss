@@ -1,9 +1,48 @@
-footer{
-   // code here
-   .footer__menu{
-
-      .menu__item{
-         
+footer {
+    // code here
+    h4, h3 {
+        font-family: serif;
+    }
+    li {
+      list-style-type: none;
+  }
+  a{
+     cursor: pointer;
+     display: inline-block;
+      color: $muted;
+      font-size: 0.8rem;
+      text-decoration: none;
+      &:hover, &.active{
+         color: $primary !important;
       }
+  }
+    .footer__menu {
+        padding: 0;
+    }
+
+    .footer__list-item{
+      gap: 2rem;
+    }
+    .footer__logo{
+      display: flex;
+      justify-content: center;
    }
+    .footer__list-logo{
+      //  gap: 2rem;
+      a{
+         // height: 3.5rem;
+      }
+       img{
+          height: 2rem;
+          margin: 0 auto;
+          display: block;
+       }
+    }
+    .footer__privacy-menu{
+       display: flex;
+       gap: 1rem;
+       flex-wrap: wrap;
+    }
+
+    
 }
