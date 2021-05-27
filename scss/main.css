@@ -235,4 +235,81 @@ header .header__navbar-nav .nav-link:hover, header .header__navbar-nav .nav-link
 
 .reveal .reveal__item {
   outline: 2px solid #1F1F1F;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.reveal .reveal__item .reveal__overlay {
+  height: 7rem;
+  position: absolute;
+  overflow-y: scroll;
+  left: 0;
+  right: 0;
+  bottom: -4.5rem;
+  padding: 0.5rem 2rem;
+  background-color: rgba(31, 31, 31, 0.3);
+  color: #fff;
+  transition: all 0.5s;
+}
+
+.reveal .reveal__item .reveal__overlay::-webkit-scrollbar {
+  /* for Chrome, Safari, and Opera */
+  display: none;
+}
+
+.reveal .reveal__item .reveal__overlay .overlay__heading {
+  margin: 0;
+  font-family: serif;
+  font-size: 1.2rem;
+  line-height: 1.3rem;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.reveal .reveal__item .reveal__overlay .overlay__describe {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 300;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.reveal .reveal__item:hover .reveal__overlay {
+  background-color: rgba(31, 31, 31, 0.7);
+  bottom: 0;
+}
+
+.reveal .reveal__item:hover .reveal__overlay .overlay__describe {
+  opacity: 1;
+}
+
+.reveal .reveal__item:hover .reveal__overlay .overlay__heading {
+  white-space: unset;
+  overflow: unset;
+  text-overflow: unset;
+}
+
+.reveal .nav-link {
+  line-height: 2rem;
+  color: #fff;
+  padding: 0;
+  display: block;
+  transition: all .5s;
+}
+
+.reveal li.nav-item {
+  padding: 1rem;
+}
+
+.reveal li.nav-item:hover .nav-link {
+  color: #00ADF0;
+}
+
+.reveal li.nav-item
+.nav-link.active {
+  color: #00ADF0;
+  border-bottom: #00ADF0 solid 1px;
 }
