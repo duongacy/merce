@@ -2,8 +2,86 @@
     // code here
     .reveal__item{
         outline: 2px solid $dark;
+        position: relative;
+        cursor: pointer;
+
+        .reveal__overlay{
+            height: 9rem;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -5.5rem; // lúc đầu có sẽ cho overlay ẩn xuống dưới để độ cao nhỏ lại, khi nào hover sẽ cho bottom =0
+            padding: .5rem 2rem;
+
+            background-color: rgba($color: $dark, $alpha: .3);
+            color: $white;
+            transition: all .5s;
+
+            .overlay__heading{
+                margin: 0; // vì thẻ h3 nó cứ mặc định margin khó chịu nên reset về 0 luôn cho dễ xử lý, thẻ p cũng vậy
+                font-family: serif;
+                font-size: 23px;
+            }
+            .overlay__describe{
+                margin: 0;
+                opacity: 0; //lúc chưa hover thì chữ mờ hết ko thấy gì cả
+                transition: all .5s; // phải nhớ set transition cho cái này vì transition kia chỉ ăn với div ngoài thôi
+            }
+        }
+
+
+        &:hover{ //khi hover vào item thì overlay ăn luôn, code của e là hover vô overlay nó mới ăn là sai
+            .reveal__overlay{
+                background-color: rgba($color: $dark, $alpha: .7); // bg color cũng đậm lên tí
+                bottom: 0; //lúc này bottom =0 nè
+                .overlay__describe{
+                    opacity: 1; // cho chữ hiện lên
+                }
+            }
+        }
     }
-    .reveal__nav{
-        
-    }
+
+    
+    // .text__img{
+    //     position: absolute;
+    //     bottom: 0;
+    //     background-color: $overlayF;
+    //     width: 100%;
+    //     height: 20%;
+    //     transition: all 0.5s;
+    //     &:hover{
+    //         height: 50%;
+    //         background-color: $overlayS;
+    //     } 
+    //     h4{
+    //         color: $white;
+    //         font-size: 20px;
+    //         padding: 13px 0 13px 31px;
+    //     }
+    //     p{
+    //         color: $white;
+    //         padding: 0 31px 23px 31px;
+    //     }
+    // }
+    // .text__img__lg{
+    //     position: absolute;
+    //     bottom: 0;
+    //     background-color: $overlayF;
+    //     width: 100%;
+    //     height: 10%;
+    //     transition: all 0.5s;
+    //     &:hover{
+    //         height: 25%;
+    //         background-color: $overlayS; 
+    //     }
+    //     h4{
+    //         color: $white;
+    //         font-size: 24px;
+    //         padding: 13px 31px 13px 31px;
+    //     }
+    //     p{
+    //         color: $white;
+    //         padding: 0 31px 23px 31px;
+    //     }
+    // }
 }
