@@ -100,6 +100,32 @@ body, html {
   opacity: .7;
 }
 
+.brandhub .carousel-control-icon {
+  background-image: unset;
+}
+
+.brandhub .carousel-control-icon::before {
+  font-family: 'Font Awesome 5 Free';
+  content: '\f053';
+  font-weight: 900;
+  display: block;
+  color: #fff;
+  font-size: 2rem;
+  transition: all .5s;
+}
+
+.brandhub .carousel-control-icon:active::before {
+  color: #00ADF0 !important;
+}
+
+.brandhub .carousel-control-next-icon::before {
+  content: '\f054';
+}
+
+.brandhub .carousel-control-prev-icon::before {
+  content: '\f053';
+}
+
 .brandhub .carousel-item {
   position: relative;
   filter: grayscale(30%);

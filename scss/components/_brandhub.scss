@@ -1,9 +1,38 @@
 .brandhub {
     // code here
-    .brandhub__carousel {
-        
+    .carousel-control-icon {
+        // display: none;
+        background-image: unset;
+        &::before {
+            font-family: 'Font Awesome 5 Free';
+            content: '\f053';
+            font-weight: 900;
+            display: block;
+            color: $white;
+            font-size: 2rem;
+            transition: all .5s;
+        }
+        &:active{
+            &::before{
+               color: $primary !important; 
+            }
+            
+        }
     }
-    .carousel-item{
+    .carousel-control-next-icon{
+        &::before {
+            content: '\f054';
+        }
+    }
+    .carousel-control-prev-icon{
+        &::before {
+            content: '\f053';
+        }
+    }
+    
+    .brandhub__carousel {
+    }
+    .carousel-item {
         position: relative;
         filter: grayscale(30%);
     }
@@ -14,6 +43,5 @@
         bottom: 10%;
         right: 10%;
         font-family: serif;
-       
     }
 }
