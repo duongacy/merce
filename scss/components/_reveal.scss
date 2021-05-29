@@ -1,4 +1,7 @@
 .reveal {
+    .reveal__tab:not(#news){
+        display: none;
+    }
     .reveal__item {
         outline: 2px solid $dark;
         position: relative;
@@ -30,6 +33,7 @@
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
+                margin-bottom: 1rem;
             }
             .overlay__describe {
                 margin: 0;
@@ -59,6 +63,10 @@
                 }
             }
         }
+    }
+    .show-when-click{
+        display: none;
+        // transition: all 1s;
     }
     .nav-link{
         line-height: 2rem;
