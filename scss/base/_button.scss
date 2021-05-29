@@ -23,6 +23,7 @@
 }
 .button-show-more{
     color: rgba($color: $white, $alpha: .6);
+    transition: all .5s;
     &:hover{
         color: $white;
     }

@@ -13,8 +13,10 @@ header {
     }
     .header__navbar-nav--sm{
         font-size: .8rem;
+        margin-top: -0.5rem;
     }
     .header__nav {
+        padding-top: 0;
         .navbar-brand {
             img {
                 height: 3.5rem;

@@ -65,6 +65,7 @@ body, html {
 
 .button-show-more {
   color: rgba(255, 255, 255, 0.6);
+  transition: all .5s;
 }
 
 .button-show-more:hover {
@@ -175,6 +176,11 @@ header .logo-wrap {
 
 header .header__navbar-nav--sm {
   font-size: .8rem;
+  margin-top: -0.5rem;
+}
+
+header .header__nav {
+  padding-top: 0;
 }
 
 header .header__nav .navbar-brand img {
@@ -298,6 +304,30 @@ header .header__navbar-nav .nav-link:hover, header .header__navbar-nav .nav-link
   transition: all 0.5s;
 }
 
+.reveal .reveal__item .reveal__play-button {
+  position: absolute;
+  display: block;
+  background-color: #fff;
+  height: 2.5rem;
+  padding: 0 1rem;
+  border: none;
+  color: #333;
+  bottom: 2.5rem;
+  transition: 1s;
+}
+
+.reveal .reveal__item .reveal__play-time {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  display: block;
+  line-height: 2.5rem;
+  color: white;
+  background-color: rgba(51, 51, 51, 0.6);
+  letter-spacing: .1rem;
+  padding: 0 1rem;
+}
+
 .reveal .reveal__item:hover .reveal__overlay {
   background-color: rgba(31, 31, 31, 0.7);
   bottom: 0;
@@ -311,6 +341,10 @@ header .header__navbar-nav .nav-link:hover, header .header__navbar-nav .nav-link
   white-space: unset;
   overflow: unset;
   text-overflow: unset;
+}
+
+.reveal .reveal__item:hover .reveal__play-button {
+  opacity: 0;
 }
 
 .reveal .show-when-click {

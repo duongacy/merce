@@ -44,6 +44,28 @@
                 transition: all 0.5s; // phải nhớ set transition cho cái này vì transition kia chỉ ăn với div ngoài thôi
             }
         }
+        .reveal__play-button{
+            position: absolute;
+            display: block;
+            background-color: $white;
+            height: 2.5rem;
+            padding: 0 1rem;
+            border: none;
+            color: $secondary;
+            bottom: 2.5rem;
+            transition: 1s;
+        }
+        .reveal__play-time{
+            position: absolute;
+            left: 100%;
+            top: 0;
+            display: block;
+            line-height: 2.5rem;
+            color: white;
+            background-color: rgba($color: $secondary, $alpha: .6);
+            letter-spacing: .1rem;
+            padding: 0 1rem;
+        }
 
         &:hover {
             //khi hover vào item thì overlay ăn luôn, code của e là hover vô overlay nó mới ăn là sai
@@ -62,8 +84,12 @@
                     text-overflow: unset;
                 }
             }
+            .reveal__play-button{
+                opacity: 0;
+            }
         }
     }
+    
     .show-when-click{
         display: none;
         // transition: all 1s;
