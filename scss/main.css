@@ -20,6 +20,10 @@ body, html {
   }
 }
 
+.w-outline {
+  max-width: calc(100% - 4px);
+}
+
 .show-only-screen {
   opacity: 0;
   transform: translateY(4rem);
